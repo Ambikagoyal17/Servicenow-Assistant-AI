@@ -1,4 +1,4 @@
-# Servicenow Documentation Assistant 🛠️
+# Servicenow Documentation Assistant 
 
 A Retrieval‑Augmented Generation (RAG) assistant for ServiceNow developer documentation. This project crawls ServiceNow docs, indexes them into a vector store, and exposes a conversational UI (Streamlit) and a lightweight REST API (FastAPI) backed by a LangChain agent + OpenAI models.
 
@@ -100,7 +100,7 @@ Response:
 
 ---
 
-## How it works (overview) 🔍
+## How it works (overview) 
 
 1. ingestion.py
    - Crawls ServiceNow docs via `TavilyCrawl`
