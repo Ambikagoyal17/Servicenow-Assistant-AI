@@ -1,17 +1,17 @@
 # Servicenow Documentation Assistant 
 
-A Retrieval‑Augmented Generation (RAG) assistant for ServiceNow developer documentation. This project crawls ServiceNow docs, indexes them into a vector store, and exposes a conversational UI (Streamlit) and a lightweight REST API (FastAPI) backed by a LangChain agent + OpenAI models.
+A Retrieval‑Augmented Generation (RAG) assistant for ServiceNow developer documentation. This project crawls ServiceNow community docs, indexes them into a vector store, and exposes a conversational UI (Streamlit) backed by a LangChain agent + OpenAI models.
 
 ---
 
 ## Highlights ✅
 
-- Ingests and chunks ServiceNow docs using TavilyCrawl and LangChain text splitters
+- Ingests and chunks ServiceNow community docs using TavilyCrawl and LangChain text splitters
 - Embeds content with OpenAI embeddings and stores vectors in Pinecone (primary).
 - RAG agent built with LangChain that retrieves context before answering
 - Web UI: `streamlit run main.py`
 - API: `uvicorn api:app --reload` (POST `/ask`)
-- used ngrck
+- used ngrok
 ---
 
 ## Quickstart — run locally (recommended)
